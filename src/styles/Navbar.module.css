@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0eeee;
+}
+
+.topBar {
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: #c02755;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.burgerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ff0000;
+}
+
+.userActions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.language {
+    margin-left: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .topBar,
+    .language {
+        display: none;
+    }
+
+    .navOpen {
+        max-height: 300px;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+
+    .mainHeader {
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .userActions {
+        justify-content: flex-end;
+    }
+
+    .language {
+        margin-top: 10px;
+    }
+}

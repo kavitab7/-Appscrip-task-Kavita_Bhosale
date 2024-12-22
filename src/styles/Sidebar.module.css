@@ -1,0 +1,103 @@
+.hideFilter {
+    margin-bottom: 10px;
+}
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f0eeee;
+    border-top: 2px solid #f0eeee;
+}
+
+.leftFilterSection {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filterSection {
+    margin-bottom: 20px;
+}
+
+.filterOpen {
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.filterClose {
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sortHeader {
+    cursor: pointer;
+}
+
+.sortOptions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sortOptions li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterSection {
+    margin-bottom: 20px;
+}
+
+.filterSection label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filterSection input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.filterSection select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .filterSection {
+        margin-bottom: 15px;
+    }
+}

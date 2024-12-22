@@ -1,0 +1,19 @@
+.container {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    padding: 20px;
+
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}

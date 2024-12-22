@@ -1,0 +1,218 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.subscribeButton {
+    background: black;
+    color: #525354;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.upperFooter {
+    display: flex;
+    border-bottom: 1px solid;
+    justify-content: space-between;
+}
+
+.lowerFooter {
+    display: flex;
+}
+
+.subscription,
+.contactInfo,
+.companyInfo,
+.quickLinks {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.socialMedia {
+    padding-top: 20px;
+    flex: 1 1 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+/* .footer p,
+.footer ul {
+    margin: 5px 0;
+} */
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 30px;
+}
+
+.subscribeForm {
+    display: flex;
+}
+
+.emailInput {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+
+
+.icons,
+.paymentIcons {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.icons .icon {
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    border: 1px solid;
+}
+
+.paymentIcons {
+    margin-top: 10px;
+}
+
+.footer ul li,
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ccc;
+}
+
+.footer .icons a,
+.footer .paymentIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .upperFooter,
+    .lowerFooter {
+        flex-direction: column;
+    }
+
+    .subscription,
+    .contactInfo,
+    .companyInfo,
+    .quickLinks {
+        flex: 1 1 80px;
+        border-bottom: 1px solid;
+    }
+
+    .subscription {
+        padding-bottom: 20px;
+    }
+
+    .currency {
+        padding-top: 10px;
+    }
+
+    .contact {
+        border-bottom: 1px solid;
+    }
+
+    .contactData {
+        display: flex;
+        gap: 10px;
+    }
+
+    .currText {
+        display: none;
+    }
+
+    .upperFooter {
+        border: none;
+    }
+
+    .subscription,
+    .contactInfo,
+    .companyInfo,
+    .quickLinks,
+    .socialMedia {
+        width: 100%;
+    }
+
+    .subscribeForm {
+        align-items: center;
+    }
+
+    .emailInput,
+    .subscribeButton {
+        max-width: 100%;
+    }
+
+    .socialMedia .icons,
+    .socialMedia .paymentIcons {
+        justify-content: flex-start;
+    }
+
+    .companyInfo ul,
+    .quickLinks ul {
+        display: none;
+    }
+
+    .companyInfo.active ul,
+    .quickLinks.active ul {
+        display: block;
+    }
+
+    .companyInfo h4,
+    .quickLinks h4 {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .companyInfo h4::after,
+    .quickLinks h4::after {
+        content: '▼';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .companyInfo ul,
+    .quickLinks ul {
+        display: block;
+    }
+
+}
